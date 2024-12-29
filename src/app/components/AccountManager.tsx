@@ -122,7 +122,7 @@ export default function AccountManager() {
             </div>
             <ul className="divide-y divide-gray-200">
               {filteredAndSortedAccounts.map((account) => (
-                <li key={account.id} className="py-4 flex flex-col md:flex-row items-center justify-between">
+                <li key={account.id} className="py-4 flex flex-col gap-5 md:flex-row items-center justify-between">
                   <p className="text-sm font-medium text-gray-900">{account.email}</p>
                   <p className="text-sm font-medium text-gray-900">{account.password}</p>
                   <div className="flex space-x-2">
