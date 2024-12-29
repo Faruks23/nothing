@@ -124,6 +124,7 @@ export default function AccountManager() {
               {filteredAndSortedAccounts.map((account) => (
                 <li key={account.id} className="py-4 flex items-center justify-between">
                   <p className="text-sm font-medium text-gray-900">{account.email}</p>
+                  <p className="text-sm font-medium text-gray-900">{account.password}</p>
                   <div className="flex space-x-2">
                     <button
                       onClick={() => loginAccount(account)}
